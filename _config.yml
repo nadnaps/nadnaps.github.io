@@ -59,7 +59,11 @@ collections:
     permalink: /news/:path/
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /projects/:index.html
+  publications:
+    output: true
+    permalink: /publications/:index.html
+
 
 news_limit: 5
 
