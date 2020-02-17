@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Vamsi Spandan | solvers</title>
+  <meta name="description" content="Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/solvers/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Vamsi</strong> Spandan
+    </span>
+    
+
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">about</a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="/solvers/">solvers</a>
+          
+        
+          
+        
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">solvers</h1>
+    <p class="post-meta"></p>
+  </header>
+
+  <article class="post-content">
+    <p>In this page I give a description of the various solvers I use and develop. This collection is a mix of open-source and under-development projects. Feel free to reach out if you would like to use any of the following solvers.</p>
+
+<p>All variants of the following solvers are equipped with MPI, OpenMP and CUDA. Please refer to the Computational Physics articles in the <a href="/publications/">publications page</a></p>
+
+<h4 id="deformation-of-drops-under-shear">Deformation of drops under shear</h4>
+
+<p align="center">
+<iframe width="480" height="270" src="http://www.youtube.com/embed/FJLStzOUhm4" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<h4 id="drops-and-bubbles-in-a-turbulent-flow">Drops and bubbles in a turbulent flow</h4>
+
+<p align="center">
+<iframe width="480" height="270" src="http://www.youtube.com/embed/_B5Wh3wb1ec" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<h4 id="flexible-sheets-immersed-in-a-turbulent-flow">Flexible sheets immersed in a turbulent flow</h4>
+<p align="center">
+<iframe width="480" height="270" src="http://www.youtube.com/embed/UM9rqVdT8qQ" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<h4 id="elastic-vesicles">Elastic vesicles</h4>
+<p align="center">
+<iframe width="480" height="270" src="http://www.youtube.com/embed/CDioWk-dBDU" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<h4 id="swimmers">Swimmers</h4>
+<p align="center">
+<iframe width="480" height="270" src="http://www.youtube.com/embed/Lg1BmCiV9C4" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<h4 id="cardiovascular-flow-left-ventricle-fluid-mechanics--structural-mechanics--electrophysiology">Cardiovascular flow: Left ventricle (Fluid Mechanics + Structural Mechanics + Electrophysiology)</h4>
+<p align="center">
+<iframe width="480" height="270" src="http://www.youtube.com/embed/H2QVaKsQHeE" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<h3 id="flow-in-a-channel-with-immersed-bodies">Flow in a channel with immersed bodies</h3>
+
+<p>All variants of this solver are equipped with MPI, OpenMP and CUDA. Solver can handle multiple deformable bodies interacting with each other.</p>
+
+<h4 id="part-1">Part 1</h4>
+
+<ul>
+  <li>Periodic in two-directions and wall-bounded in the other direction.</li>
+  <li>Fluid governing equations are parallelised in the wall-normal direction using slab decomposition.</li>
+  <li>Processor handling of immersed objects dependent on its instantaneous positions.</li>
+</ul>
+
+<h4 id="part-2">Part 2</h4>
+
+<ul>
+  <li>Periodic + Inflow-Outflow + Wall-bounded. A numerical wind-tunnel.</li>
+  <li>Fluid governing equations are parallelised in the inflow-outflow (stream-wise) direction.</li>
+  <li>Processor handling of immersed objects dependent on its instantaneous positions.</li>
+</ul>
+
+
+  </article>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2020 Vamsi Spandan.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXXXXX-X', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
