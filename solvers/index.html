@@ -111,26 +111,6 @@
 <iframe width="480" height="270" src="http://www.youtube.com/embed/H2QVaKsQHeE" frameborder="0" allowfullscreen=""></iframe>
 </p>
 
-<h3 id="flow-in-a-channel-with-immersed-bodies">Flow in a channel with immersed bodies</h3>
-
-<p>All variants of this solver are equipped with MPI, OpenMP and CUDA. Solver can handle multiple deformable bodies interacting with each other.</p>
-
-<h4 id="part-1">Part 1</h4>
-
-<ul>
-  <li>Periodic in two-directions and wall-bounded in the other direction.</li>
-  <li>Fluid governing equations are parallelised in the wall-normal direction using slab decomposition.</li>
-  <li>Processor handling of immersed objects dependent on its instantaneous positions.</li>
-</ul>
-
-<h4 id="part-2">Part 2</h4>
-
-<ul>
-  <li>Periodic + Inflow-Outflow + Wall-bounded. A numerical wind-tunnel.</li>
-  <li>Fluid governing equations are parallelised in the inflow-outflow (stream-wise) direction.</li>
-  <li>Processor handling of immersed objects dependent on its instantaneous positions.</li>
-</ul>
-
 
   </article>
 
